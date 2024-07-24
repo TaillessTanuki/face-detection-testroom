@@ -74,7 +74,7 @@ def faceProcessor():
             isProcessingFrame = False
         time.sleep(0.01)
 
-def resize_with_aspect_ratio(frame, width=None, height=None, inter=cv2.INTER_AREA):
+def resize_with_aspect_ratio(frame, width=None, height=None, inter=cv2.INTER_LANCZOS4):
     dim = None
     (h, w) = frame.shape[:2]
 
